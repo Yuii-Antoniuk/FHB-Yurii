@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mobilemenu.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="header__navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">How It works</a></li>
+                    <li class="header__nav-item"><a href="#">Fruits</a></li>
+                    <li class="header__nav-item"><a href="#">Contacts</a></li>
+                </ul>
+
+                <h1 class="header__title"><svg class="header__title-icon"><use href="./symbol-defs.svg#icon-logo"></svg>FRESH HARVEST BOX</h1>
+                <svg class="header__shop-icon"><use href="./symbol-defs.svg#icon-shop-icon"></svg>
+                
+                <button class="js-open-menu">
+                    <svg class="menu__mobile-icon" aria-expanded="false">
+                        <use href="./symbol-defs.svg#icon-menu-mobile"></use>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="js-menu-container">
+        <button class="js-close-menu">
+            <svg class="mobilemenu__close-icon">
+                <use href="./symbol-defs.svg#mobilemenu-close-icon"></use>
+            </svg>
+        </button>
+        <div class="mobilemenu__container">
+            <nav>
+                <ul class="mobilemenu__menu">
+                    <li class="mobilemenu__link"><a href="#">How It Works</a></li>
+                    <li class="mobilemenu__link"><a href="#">Fruits</a></li>
+                    <li class="mobilemenu__link"><a href="#">Contacts</a></li>
+                    <li class="mobilemenu__link">
+                        <a href="">
+                          <svg class="icon-shop-icon">
+                            <use href="./symbol-defs.svg#icon-shop-icon"></use>
+                          </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="mobile-menu.js"></script>
+    <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+</body>
+</html>
+
